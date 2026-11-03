@@ -221,8 +221,8 @@ Sheets, hit points, conditions, spell slots, items, homebrew and companions.
 | `get_party` | The party at a glance (GM only) | read |
 | `update_character_state` | Change hit points, conditions or slots | write |
 | `set_character_overlay` | Replace what has been spent | write |
-| `add_character_from_beyond` | Add a character from Beyond | write |
-| `sync_character` | Sync a character from Beyond | write |
+| `add_character_from_beyond` | Import a character from a character-sheet link | write |
+| `sync_character` | Sync an imported character | write |
 | `set_character_on_hud` | Show or hide a character on the Master HUD (GM only) | write |
 | `play_character` | Make a character my primary (holder only) | write |
 | `mark_character_fallen` | Mark a character as fallen | write |
