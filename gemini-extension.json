@@ -1,0 +1,11 @@
+{
+  "name": "tavern",
+  "version": "1.0.1",
+  "description": "Tavern: a tabletop RPG campaign journal, wiki, characters and combat tracker. Read and write your campaigns from Gemini CLI.",
+  "mcpServers": {
+    "tavern": {
+      "httpUrl": "https://gettavern.app/mcp",
+      "description": "Tavern's hosted MCP server. Signs in with your Tavern account over OAuth."
+    }
+  }
+}

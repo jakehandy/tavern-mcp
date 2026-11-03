@@ -6,7 +6,7 @@
 
 Your tabletop RPG campaigns, as tools. **[Tavern](https://gettavern.app)** keeps a TTRPG group's campaign in one place: dated sessions with everybody's notes, a wiki of the people, places and things in them, maps with pins, character sheets with live hit points and spell slots, a combat tracker, and each player's private notes. This server lets Claude, Cursor, VS Code or any MCP client work on all of it, acting as you at the tables you already sit at.
 
-This repository holds the listing only: this README, the registry entry and the icon. The server is hosted by Tavern, so there is nothing to install or run.
+This repository holds the listing only: this README, the registry entry, the Gemini CLI extension manifest and the icon. The server is hosted by Tavern, so there is nothing to install or run.
 
 | | |
 | --- | --- |
@@ -68,6 +68,14 @@ Add it to `.vscode/mcp.json` in a workspace, or to your user settings.
     }
   }
 }
+```
+
+### Gemini CLI
+
+This repository is a Gemini CLI extension. Install it, then run `/mcp auth tavern` inside Gemini CLI to sign in.
+
+```sh
+gemini extensions install https://github.com/jakehandy/tavern-mcp
 ```
 
 ### Anything else
