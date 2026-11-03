@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jakehandy/tavern",
+  "title": "Tavern",
+  "description": "Your tabletop campaign's journal, wiki, map, character sheets and combat tracker.",
+  "version": "1.0.0",
+  "websiteUrl": "https://gettavern.app/developers",
+  "repository": {
+    "url": "https://github.com/jakehandy/tavern-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://gettavern.app/icons/site-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gettavern.app/mcp"
+    }
+  ]
+}
