@@ -132,7 +132,7 @@ Make a table, fill its seats, change its look, leave one.
 | --- | --- | --- |
 | `create_campaign` | Create a campaign | write |
 | `get_campaign` | Get a campaign | read |
-| `update_campaign_look` | Change a campaign's look (GM only) | write |
+| `update_campaign_look` | Change a campaign's look and letters (GM only) | write |
 | `list_seats` | List the seats | read |
 | `add_seat` | Add a seat (owner only) | write |
 | `remove_seat` | Remove a seat (owner only) | delete |
