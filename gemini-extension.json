@@ -1,6 +1,6 @@
 {
   "name": "tavern",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Tavern: a tabletop RPG campaign journal, wiki, characters and combat tracker. Read and write your campaigns from Gemini CLI.",
   "mcpServers": {
     "tavern": {

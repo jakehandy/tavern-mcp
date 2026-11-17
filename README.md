@@ -4,7 +4,7 @@
 
 # Tavern MCP server
 
-Your tabletop RPG campaigns, as tools. **[Tavern](https://gettavern.app)** keeps a TTRPG group's campaign in one place: dated sessions with everybody's notes, a wiki of the people, places and things in them, maps with pins, character sheets with live hit points and spell slots, a combat tracker, and each player's private notes. This server lets Claude, Cursor, VS Code or any MCP client work on all of it, acting as you at the tables you already sit at.
+Your tabletop RPG campaigns, as tools. **[Tavern](https://gettavern.app)** keeps a TTRPG group's campaign in one place: dated sessions with everybody's notes, a wiki of the people, places and things in them, maps with pins, character sheets with live hit points and spell slots, a combat tracker, and each player's private notes. This server lets Claude, ChatGPT, Cursor, VS Code or any MCP client work on all of it, acting as you at the tables you already sit at.
 
 This repository holds the listing only: this README, the registry entry, the Gemini CLI extension manifest and the icon. The server is hosted by Tavern, so there is nothing to install or run.
 
@@ -31,7 +31,11 @@ You need a free Tavern account and a campaign. Sign up at [gettavern.app/signin]
 
 ### Claude
 
-In Settings, under Connectors, add a custom connector and paste `https://gettavern.app/mcp`. Claude opens a Tavern page asking you to approve it.
+In Settings, under Connectors, add a custom connector and paste `https://gettavern.app/mcp`. Claude opens a Tavern page asking you to approve it. Tavern is also in [Claude's connectors directory](https://claude.ai/directory/tavern), where you can add it in one step.
+
+### ChatGPT
+
+Open [Tavern in ChatGPT's plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6aea12735ca481918ed22cf1fba63a1f), add it, and approve it on the Tavern page that opens.
 
 ### Claude Code
 
@@ -102,7 +106,7 @@ A connected app is you and no more. It reaches the tables you sit at with the se
 
 ## Tools
 
-117 tools in fourteen groups as of November 2026. The server is the source of truth: your client lists exactly the tools your sign-in allows, and [gettavern.app/developers](https://gettavern.app/developers#reference) always shows the current catalog with every argument. Every tool carries a title and read-only or destructive hints.
+119 tools in fourteen groups as of November 2026. The server is the source of truth: your client lists exactly the tools your sign-in allows, and [gettavern.app/developers](https://gettavern.app/developers#reference) always shows the current catalog with every argument. Every tool carries a title and read-only or destructive hints.
 
 Campaigns are named by slug, sessions by their play date (`YYYY-MM-DD`), and wiki pages and characters by slug. Start with `list_campaigns`.
 
@@ -164,6 +168,7 @@ Pages for every person, place and thing, their history, and search across the lo
 | `get_wiki_page` | Read a wiki page | read |
 | `get_wiki_page_history` | Read a page's history | read |
 | `create_wiki_page` | Create a wiki page | write |
+| `create_wiki_pages` | Create several wiki pages | write |
 | `update_wiki_page` | Edit a wiki page | write |
 | `delete_wiki_page` | Delete a wiki page (GM only) | delete |
 | `link_wiki_page_to_seat` | Mark a page as somebody's character | write |
@@ -202,6 +207,7 @@ The table's maps and the pins on them, shared and private.
 | Tool | What it does | Scope |
 | --- | --- | --- |
 | `list_maps` | List maps | read |
+| `add_map` | Add a map from a picture's link | write |
 | `list_pins` | List a map's pins | read |
 | `list_my_private_pins` | List my private pins | read |
 | `create_pin` | Drop a pin | write |
