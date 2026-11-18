@@ -3,7 +3,7 @@
   "name": "io.github.jakehandy/tavern",
   "title": "Tavern",
   "description": "Your tabletop campaign's journal, wiki, map, character sheets and combat tracker.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "websiteUrl": "https://gettavern.app/developers",
   "repository": {
     "url": "https://github.com/jakehandy/tavern-mcp",
